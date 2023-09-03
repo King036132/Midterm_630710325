@@ -16,26 +16,26 @@ class _HomePageState extends State<HomePage> {
 
   final List<Question> _questions = [
     Question(
-      choiceText: '1of3',
-      questionText: 'What is the capital of Japan?',
+
+      questionText: 'What is the capital of Japan? (1of4)',
       options: ['Tokyo', 'Bangkok', 'Seoul', 'Beijing'],
       correctOptionIndex: 0,
     ),
     Question(
-      choiceText: '2of3',
-      questionText: 'Which planet has oxygen and water?',
+
+      questionText: 'Which planet has oxygen and water? (2of4)',
       options: ['Mars', 'Earth', 'Jupiter', 'Venus'],
       correctOptionIndex: 1,
     ),
     Question(
-      choiceText: '4of3',
-      questionText: 'Which animal is the king of the Jurassic?',
+
+      questionText: 'Which animal is the king of the Jurassic? (3of4)',
       options: ['Baryonyx', 'Dimorphodon', 'Tirex', 'Apatosaurous'],
       correctOptionIndex: 2,
     ),
     Question(
-      choiceText: '4of4',
-      questionText: 'Which Animal is smallest?',
+
+      questionText: 'Which animal is smallest? (4of4)',
       options: ['Lion', 'Dog', 'Cat', 'Ant'],
       correctOptionIndex: 3,
     ),
@@ -118,7 +118,7 @@ class _HomePageState extends State<HomePage> {
 }
 
 class Question {
-  var choiceText;
+
   final String questionText;
   final List<String> options;
   final int correctOptionIndex;
@@ -129,7 +129,7 @@ class Question {
     required this.questionText,
     required this.options,
     required this.correctOptionIndex,
-    required this.choiceText
+
   });
 }
 
